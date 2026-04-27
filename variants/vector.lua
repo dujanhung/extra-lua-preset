@@ -172,34 +172,55 @@ function vector.exp(
  return output
 end
 
-function vector.mixdown(o)
- if!safegruard.is_vector(o)then
+function vector.mixdown(
+ o
+)
+ if!safegruard.is_vector(
+  o
+ )then
   return
  end
- local output=o[1]
+ local output=o[
+  1
+ ]
  if #a>1 then
-  for i=2,#a do
-   o[1]=o[1]+o[i]
+  for i=
+   2,
+   #a
+  do
+   o[
+    1
+   ]=o[
+    1
+   ]+o[
+    i
+   ]
   end
  end
  return output
 end
 
-function vector.inverse(o)
+function vector.inverse(
+ o
+)
  return vector.scale(
   o,
   -1
  )
 end
 
-function vector.exp2(o)
+function vector.exp2(
+ o
+)
  return vector.exp(
   o,
   2
  )
 end
 
-function vector.length(o)
+function vector.length(
+ o
+)
  return math.sqrt(
   vector.mixdown(
    vector.exp2(
@@ -209,7 +230,10 @@ function vector.length(o)
  )
 end
 
-function vector.distance(a,b)
+function vector.distance(
+ a,
+ b
+)
  return math.sqrt(
   vector.mixdown(
    vector.exp2(
@@ -222,7 +246,10 @@ function vector.distance(a,b)
  )
 end
 
-function vector.dot(a,b)
+function vector.dot(
+ a,
+ b
+)
  return vector.mixdown(
   vector.multiply(
    a,
@@ -231,7 +258,9 @@ function vector.dot(a,b)
  )
 end
 
-function vector.normalize(o)
+function vector.normalize(
+ o
+)
  return vector.divide(
   o,
   vector.length(
@@ -240,7 +269,10 @@ function vector.normalize(o)
  )
 end
 
-function vector.projection(a,b)
+function vector.projection(
+ a,
+ b
+)
  local o=vector.normalized(
   b
  )
