@@ -1,7 +1,3 @@
-module(
- "extra_math"
-)
-
 function extra_math.is_approx(value,target,artifact)
  local o=value-target
  if(
