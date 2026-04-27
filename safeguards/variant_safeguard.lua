@@ -27,9 +27,11 @@ end
 function variant_safeguard.is_string(
  o
 )
- if type(
-  o
- )!="string"then
+ if(
+  type(
+   o
+  )!="string"
+ )then
   return false
  end
  return true
@@ -38,9 +40,11 @@ end
 function variant_safeguard.is_table(
  o
 )
- if type(
-  o
- )!="table"then
+ if(
+  type(
+   o
+  )!="table"
+ )then
   return false
  end
  return true
@@ -49,9 +53,11 @@ end
 function variant_safeguard.is_function(
  o
 )
- if type(
-  o
- )!="function"then
+ if(
+  type(
+   o
+  )!="function"
+ )then
   return false
  end
  return true
