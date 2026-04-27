@@ -1,4 +1,7 @@
-function vector.add(a,b)
+function vector.add(
+ a,
+ b
+)
  if!safeguard.is_vector_stable(
   {
    a,
@@ -8,13 +11,26 @@ function vector.add(a,b)
   return
  end
  local output={}
- for i=1,#a do
-  table.insert(output,a[i]+b[i])
+ for i=
+  1,
+  #a
+ do
+  table.insert(
+   output,
+   a[
+    i
+   ]+b[
+    i
+   ]
+  )
  end
  return output
 end
 
-function vector.subtract(a,b)
+function vector.subtract(
+ a,
+ b
+)
  if!safeguard.is_vector_stable(
   {
    a,
@@ -24,13 +40,26 @@ function vector.subtract(a,b)
   return
  end
  local output={}
- for i=1,#a do
-  table.insert(output,a[i]-b[i])
+ for i=
+  1,
+  #a
+ do
+  table.insert(
+   output,
+   a[
+    i
+   ]-b[
+    i
+   ]
+  )
  end
  return output
 end
 
-function vector.multiply(a,b)
+function vector.multiply(
+ a,
+ b
+)
  if!safeguard.is_vector_stable(
   {
    a,
@@ -40,13 +69,26 @@ function vector.multiply(a,b)
   return
  end
  local output={}
- for i=1,#a do
-  table.insert(output,a[i]*b[i])
+ for i=
+  1,
+  #a
+ do
+  table.insert(
+   output,
+   a[
+    i
+   ]*b[
+    i
+   ]
+  )
  end
  return output
 end
 
-function vector.divide(a,b)
+function vector.divide(
+ a,
+ b
+)
  if!safeguard.is_vector_stable(
   {
    a,
@@ -56,8 +98,18 @@ function vector.divide(a,b)
   return
  end
  local output={}
- for i=1,#a do
-  table.insert(output,a[i]/b[i])
+ for i=
+  1,
+  #a
+ do
+  table.insert(
+   output,
+   a[
+    i
+   ]/b[
+    i
+   ]
+  )
  end
  return output
 end
