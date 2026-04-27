@@ -123,6 +123,11 @@ function vector.scale(
  )then
   return
  end
+ if!variant_safeguard.is_number(
+  n
+ )then
+  return
+ end
  local output={}
  for i=
   1,
@@ -144,6 +149,11 @@ function vector.exp(
 )
  if!variant_safeguard.is_vector(
   a
+ )then
+  return
+ end
+ if!variant_safeguard.is_number(
+  n
  )then
   return
  end
