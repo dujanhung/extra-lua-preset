@@ -1,9 +1,11 @@
 function variant_safeguard.is_boolean(
  o
 )
- if type(
-  o
- )!="boolean"then
+ if(
+  type(
+   o
+  )!="boolean"
+ )then
   return false
  end
  return true
@@ -12,9 +14,11 @@ end
 function variant_safeguard.is_number(
  o
 )
- if type(
-  o
- )!="number"then
+ if(
+  type(
+   o
+  )!="number"
+ )then
   return false
  end
  return true
@@ -56,24 +60,20 @@ end
 function variant_safeguard.is_vector(
  o
 )
- if!
-  variant_safeguard.is_table(
-   o
-  )
- then
+ if!variant_safeguard.is_table(
+  o
+ )then
   return false
  end
  for i=
   1,
   #o
  do
-  if!
-   variant_safeguard.is_number(
-    a[
-     i
-    ]
-   )
-  then
+  if!variant_safeguard.is_number(
+   a[
+    i
+   ]
+  )then
    return false
   end
  end
@@ -83,30 +83,27 @@ end
 function variant_safeguard.is_vector_stable(
  o
 )
- if!
-  variant_safeguard.is_table(
-   o
-  )
- then
+ if!variant_safeguard.is_table(
+  o
+ )then
   return false
  end
  for i=
   1,
   #o
  do
-  if!
-   variant_safeguard.is_vector(
-    o[
-     i
-    ]
-   )
-  then
+  if!variant_safeguard.is_vector(
+   o[
+    i
+   ]
+  )then
    return false
   end
-  if
+  if(
    i
    >
    1
+  )
   then
    if
     #o[
