@@ -177,11 +177,13 @@ function vector.scale(
   table.insert(
    output,
    (
-    a[
-     i
-    ]
-   )*(
-    n
+    (
+     a[
+      i
+     ]
+    )*(
+     n
+    )
    )
   )
  end
@@ -215,11 +217,13 @@ function vector.exp(
   table.insert(
    output,
    (
-    a[
-     i
-    ]
-   )^(
-    n
+    (
+     a[
+      i
+     ]
+    )^(
+     n
+    )
    )
   )
  end
@@ -256,12 +260,15 @@ function vector.mixdown(
    o[
     1
    ]=(
-    o[
-     1
-    ])+(
-    o[
-     i
-    ]
+    (
+     o[
+      1
+     ]
+    )+(
+     o[
+      i
+     ]
+    )
    )
   end
  end
