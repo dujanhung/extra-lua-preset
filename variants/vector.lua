@@ -3,7 +3,6 @@ function vector.subtract(a,b)if!variant_safeguard.is_vector_stable({a,b})then re
 function vector.multiply(a,b)if!variant_safeguard.is_vector_stable({a,b})then return end local output={}for i=1,#a do table.insert(output,a[i]*b[i])end return output end
 function vector.divide(a,b)if!variant_safeguard.is_vector_stable({a,b})then return end local output={}for i=1,#a do table.insert(output,a[i]/b[i])end return output end
 function vector.scale(a,n)if!variant_safeguard.is_vector(a)then return end if!variant_safeguard.is_number(n)then return end local output={}for i=1,#a do table.insert(output,a[i]*n)end return output end
-
 function vector.exp(a,n)if!variant_safeguard.is_vector(a)then return end if!variant_safeguard.is_number(n)then return end local output={}for i=1,#a do table.insert(output,a[i]^n)end return output end
 
 function vector.mixdown(
