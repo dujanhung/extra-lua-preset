@@ -13,3 +13,11 @@ dofile(
 required(
  "variant_safeguard"
 )
+
+module(
+ "extra_math"
+)
+
+dofile(
+ "extra-lua-preset/maths/extra_math.lua"
+)
