@@ -114,24 +114,50 @@ function vector.divide(
  return output
 end
 
-function vector.scale(a,n)
- if!safeguard.is_vector(a)then
+function vector.scale(
+ a,
+ n
+)
+ if!variant_safeguard.is_vector(
+  a
+ )then
   return
  end
  local output={}
- for i=1,#a do
-  table.insert(output,a[i]*n)
+ for i=
+  1,
+  #a
+ do
+  table.insert(
+   output,
+   a[
+    i
+   ]*n
+  )
  end
  return output
 end
 
-function vector.exp(a,n)
- if!safeguard.is_vector(a)then
+function vector.exp(
+ a,
+ n
+)
+ if!variant_safeguard.is_vector(
+  a
+ )then
   return
  end
  local output={}
- for i=1,#a do
-  table.insert(output,a[i]^n)
+ for i=
+  1,
+  #a
+ do
+  table.insert(
+   output,
+   a[
+    i
+   ]^n
+  )
  end
  return output
 end
