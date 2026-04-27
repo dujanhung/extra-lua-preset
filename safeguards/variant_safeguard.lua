@@ -83,10 +83,11 @@ function variant_safeguard.is_vector(
  )then
   return false
  end
- for i=
-  1,
+ for i=(
+  1
+ ),(
   #o
- do
+ )do
   if!(
    variant_safeguard.is_number(
     a[
@@ -110,10 +111,11 @@ function variant_safeguard.is_vector_stable(
  )then
   return false
  end
- for i=
-  1,
+ for i=(
+  1
+ ),(
   #o
- do
+ )do
   if!(
    variant_safeguard.is_vector(
     o[
@@ -124,19 +126,23 @@ function variant_safeguard.is_vector_stable(
    return false
   end
   if(
-   i
-   >
-   1
+   (
+    i
+   )>(
+    1
+   )
   )
   then
    if(
-    #o[
-     1
-    ]
-    !=
-    #o[
-     i
-    ]
+    (
+     #o[
+      1
+     ]
+    )!=(
+     #o[
+      i
+     ]
+    )
    )then
     return false
    end
