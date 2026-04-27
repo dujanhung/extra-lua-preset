@@ -131,8 +131,7 @@ function variant_safeguard.is_vector_stable(
    )>(
     1
    )
-  )
-  then
+  )then
    if(
     (
      #o[
