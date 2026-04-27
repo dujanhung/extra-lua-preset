@@ -1,11 +1,3 @@
-/*
-
-required decencies:
-
-https://dujanhung.github.com/extra-lua-preset/blob/headers/variant_safeguard.lua
-
-*/
-
 function vector.add(a,b)
  if!safeguard.is_vector_stable(
   {
