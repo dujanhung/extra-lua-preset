@@ -1,13 +1,9 @@
 function variant_safeguard.is_boolean(
  o
 )
- if
-  type(
-   o
-  )
-  !=
-  "boolean"
- then
+ if type(
+  o
+ )!="boolean"then
   return false
  end
  return true
@@ -16,13 +12,9 @@ end
 function variant_safeguard.is_number(
  o
 )
- if
-  type(
-   o
-  )
-  !=
-  "number"
- then
+ if type(
+  o
+ )!="number"then
   return false
  end
  return true
@@ -31,13 +23,9 @@ end
 function variant_safeguard.is_string(
  o
 )
- if
-  type(
-   o
-  )
-  !=
-  "string"
- then
+ if type(
+  o
+ )!="string"then
   return false
  end
  return true
@@ -46,13 +34,9 @@ end
 function variant_safeguard.is_table(
  o
 )
- if
-  type(
-   o
-  )
-  !=
-  "table"
- then
+ if type(
+  o
+ )!="table"then
   return false
  end
  return true
@@ -61,13 +45,9 @@ end
 function variant_safeguard.is_function(
  o
 )
- if
-  type(
-   o
-  )
-  !=
-  "function"
- then
+ if type(
+  o
+ )!="function"then
   return false
  end
  return true
