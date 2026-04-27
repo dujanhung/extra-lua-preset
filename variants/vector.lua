@@ -14,10 +14,6 @@ required(
  "variant_safeguard"
 )
 
-module(
- "vector"
-)
-
 function vector.add(a,b)
  if!safeguard.is_vector_stable(
   {
