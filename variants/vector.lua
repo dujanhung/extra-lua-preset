@@ -221,26 +221,41 @@ end
 function vector.mixdown(
  o
 )
- if!safegruard.is_vector(
-  o
+ if!(
+  safegruard.is_vector(
+   o
+  )
  )then
   return
  end
- local output=o[
-  1
- ]
- if #a>1 then
-  for i=
-   2,
+ local output=(
+  o[
+   1
+  ]
+ )
+ if(
+  (
    #a
-  do
+  )>(
+   1
+  )
+ )then
+  for i=(
+   2
+  ),(
+   #a
+  )do
    o[
     1
-   ]=o[
-    1
-   ]+o[
-    i
-   ]
+   ]=(
+    o[
+     1
+    ]
+    )+(
+    o[
+     i
+    ]
+   )
   end
  end
  return output
