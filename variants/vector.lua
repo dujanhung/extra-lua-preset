@@ -2,7 +2,7 @@
 
 required decencies:
 
-https://dujanhung.github.com/extra-lua-preset/blob/headers/safeguard.lua
+https://dujanhung.github.com/extra-lua-preset/blob/headers/variant_safeguard.lua
 
 */
 
@@ -11,7 +11,7 @@ dofile(
 )
 
 required(
- "safeguard"
+ "variant_safeguard"
 )
 
 module(
