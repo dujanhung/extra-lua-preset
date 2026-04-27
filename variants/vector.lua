@@ -6,14 +6,6 @@ https://dujanhung.github.com/extra-lua-preset/blob/headers/variant_safeguard.lua
 
 */
 
-dofile(
- "extra-lua-preset/headers/variant_safeguard.lua"
-)
-
-required(
- "variant_safeguard"
-)
-
 function vector.add(a,b)
  if!safeguard.is_vector_stable(
   {
