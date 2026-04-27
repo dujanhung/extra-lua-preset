@@ -11,5 +11,9 @@ module(
 )
 
 dofile(
+ "extra-lua-preset/configs/extra_math.lua"
+)
+
+dofile(
  "extra-lua-preset/maths/extra_math.lua"
 )
