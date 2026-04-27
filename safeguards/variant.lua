@@ -1,5 +1,5 @@
 module(
- "safeguard"
+ "variant_safeguard"
 )
 
 function safeguard.is_boolean(o)
