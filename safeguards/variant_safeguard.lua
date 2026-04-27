@@ -1,7 +1,3 @@
-module(
- "variant_safeguard"
-)
-
 function variant_safeguard.is_boolean(o)
  if type(
   o
