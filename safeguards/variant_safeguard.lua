@@ -76,20 +76,24 @@ end
 function variant_safeguard.is_vector(
  o
 )
- if!variant_safeguard.is_table(
-  o
- )then
+ if!
+  variant_safeguard.is_table(
+   o
+  )
+ then
   return false
  end
  for i=
   1,
   #o
  do
-  if!variant_safeguard.is_number(
-   a[
-    i
-   ]
-  )then
+  if!
+   variant_safeguard.is_number(
+    a[
+     i
+    ]
+   )
+  then
    return false
   end
  end
@@ -99,28 +103,40 @@ end
 function variant_safeguard.is_vector_stable(
  o
 )
- if!variant_safeguard.is_table(
-  o
- )then
+ if!
+  variant_safeguard.is_table(
+   o
+  )
+ then
   return false
  end
  for i=
   1,
   #o
  do
-  if!variant_safeguard.is_vector(
-   o[
-    i
-   ]
-  )then
+  if!
+   variant_safeguard.is_vector(
+    o[
+     i
+    ]
+   )
+  then
    return false
   end
-  if i>1 then
-   if#o[
-    1
-   ]!=#o[
-    i
-   ]then
+  if
+   i
+   >
+   1
+  then
+   if
+    #o[
+     1
+    ]
+    !=
+    #o[
+     i
+    ]
+   then
     return false
    end
   end
