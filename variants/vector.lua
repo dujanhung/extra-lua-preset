@@ -1,3 +1,7 @@
+dofile(
+ "extra-lua-preset/headers/safeguard.lua"
+)
+
 required(
  "safeguard"
 )
