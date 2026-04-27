@@ -2,7 +2,7 @@ function vector.add(
  a,
  b
 )
- if!safeguard.is_vector_stable(
+ if!variant_safeguard.is_vector_stable(
   {
    a,
    b
@@ -31,7 +31,7 @@ function vector.subtract(
  a,
  b
 )
- if!safeguard.is_vector_stable(
+ if!variant_safeguard.is_vector_stable(
   {
    a,
    b
@@ -60,7 +60,7 @@ function vector.multiply(
  a,
  b
 )
- if!safeguard.is_vector_stable(
+ if!variant_safeguard.is_vector_stable(
   {
    a,
    b
@@ -89,7 +89,7 @@ function vector.divide(
  a,
  b
 )
- if!safeguard.is_vector_stable(
+ if!variant_safeguard.is_vector_stable(
   {
    a,
    b
