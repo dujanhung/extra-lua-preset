@@ -1,17 +1,4 @@
-function variant_safeguard.is_boolean(
- o
-)
- if(
-  type(
-   o
-  )!=(
-   "boolean"
-  )
- )then
-  return false
- end
- return true
-end
+function variant_safeguard.is_boolean(o)if type(o)!="boolean"then return false end return true end
 
 function variant_safeguard.is_number(
  o
