@@ -1,3 +1,11 @@
+dofile(
+ "extra-lua-preset/headers/variant_safeguard.lua"
+)
+
+required(
+ "variant_safeguard"
+)
+
 module(
  "vector"
 )
