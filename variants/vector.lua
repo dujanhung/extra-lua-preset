@@ -7,7 +7,7 @@ https://dujanhung.github.com/extra-lua-preset/blob/headers/safeguard.lua
 */
 
 dofile(
- "extra-lua-preset/headers/safeguard.lua"
+ "extra-lua-preset/headers/variant_safeguard.lua"
 )
 
 required(
