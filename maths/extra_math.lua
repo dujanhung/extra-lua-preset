@@ -2,8 +2,6 @@ module(
  "extra_math"
 )
 
-extra_math.epsilon=1e-9
-
 function extra_math.is_approx(value,target,artifact)
  local o=value-target
  if(
