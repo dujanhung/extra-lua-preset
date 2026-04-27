@@ -184,26 +184,35 @@ function vector.exp(
  a,
  n
 )
- if!variant_safeguard.is_vector(
-  a
+ if!(
+  variant_safeguard.is_vector(
+   a
+  )
  )then
   return
  end
- if!variant_safeguard.is_number(
-  n
+ if!(
+  variant_safeguard.is_number(
+   n
+  )
  )then
   return
  end
  local output={}
- for i=
-  1,
+ for i=(
+  1
+ ),(
   #a
- do
+ )do
   table.insert(
    output,
-   a[
-    i
-   ]^n
+   (
+    a[
+     i
+    ]
+   )^(
+    n
+   )
   )
  end
  return output
