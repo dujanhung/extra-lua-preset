@@ -4,7 +4,9 @@ function variant_safeguard.is_boolean(
  if(
   type(
    o
-  )!="boolean"
+  )
+  !=
+  "boolean"
  )then
   return false
  end
@@ -17,7 +19,9 @@ function variant_safeguard.is_number(
  if(
   type(
    o
-  )!="number"
+  )
+  !=
+  "number"
  )then
   return false
  end
@@ -30,7 +34,9 @@ function variant_safeguard.is_string(
  if(
   type(
    o
-  )!="string"
+  )
+  !=
+  "string"
  )then
   return false
  end
@@ -43,7 +49,9 @@ function variant_safeguard.is_table(
  if(
   type(
    o
-  )!="table"
+  )
+  !=
+  "table"
  )then
   return false
  end
@@ -56,7 +64,9 @@ function variant_safeguard.is_function(
  if(
   type(
    o
-  )!="function"
+  )
+  !=
+  "function"
  )then
   return false
  end
@@ -114,13 +124,17 @@ function variant_safeguard.is_vector_stable(
    return false
   end
   if(
-   i>1
+   i
+   >
+   1
   )
   then
    if(
     #o[
      1
-    ]!=#o[
+    ]
+    !=
+    #o[
      i
     ]
    )then
