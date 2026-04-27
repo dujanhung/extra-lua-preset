@@ -11,7 +11,11 @@ module(
  "extra_math"
 )
 local config_filepath="extra-lua-preset/configs/extra_math.txt"
-extra_math.epsilon=tonumber(io.lines(config_filepath))
+for line in io.lines(config_filepath)do
+ if line==1 then
+  extra_math.epsilon=tonumber(line)
+ end
+end
 dofile(
  "extra-lua-preset/maths/extra_math.lua"
 )
