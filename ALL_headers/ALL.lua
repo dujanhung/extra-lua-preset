@@ -1,1 +1,2 @@
-local header_folder_name="extra-lua-preset/headers/";local file_ext=".lua";local file_names={"variant_safeguard","extra_math","vector"};for i=1,#file_names do dofile(header_folder_name..file_names..file_ext)end end
+local config_filepath="extra_lua_preset/configs/ALL_headers.txt"
+while io.lines(config_filepath)do dofile(header_folder_name..file_names..file_ext)end
