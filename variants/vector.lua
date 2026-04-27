@@ -21,13 +21,15 @@ function vector.add(
   table.insert(
    output,
    (
-    a[
-     i
-    ]
-   )+(
-    b[
-     i
-    ]
+    (
+     a[
+      i
+     ]
+    )+(
+     b[
+      i
+     ]
+    )
    )
   )
  end
@@ -57,13 +59,15 @@ function vector.subtract(
   table.insert(
    output,
    (
-    a[
-     i
-    ]
-   )-(
-    b[
-     i
-    ]
+    (
+     a[
+      i
+     ]
+    )-(
+     b[
+      i
+     ]
+    )
    )
   )
  end
@@ -93,13 +97,15 @@ function vector.multiply(
   table.insert(
    output,
    (
-    a[
-     i
-    ]
-   )*(
-    b[
-     i
-    ]
+    (
+     a[
+      i
+     ]
+    )*(
+     b[
+      i
+     ]
+    )
    )
   )
  end
@@ -129,13 +135,15 @@ function vector.divide(
   table.insert(
    output,
    (
-    a[
-     i
-    ]
-   )/(
-    b[
-     i
-    ]
+    (
+     a[
+      i
+     ]
+    )/(
+     b[
+      i
+     ]
+    )
    )
   )
  end
