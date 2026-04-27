@@ -250,8 +250,7 @@ function vector.mixdown(
    ]=(
     o[
      1
-    ]
-    )+(
+    ])+(
     o[
      i
     ]
