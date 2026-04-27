@@ -38,26 +38,33 @@ function vector.subtract(
  a,
  b
 )
- if!variant_safeguard.is_vector_stable(
-  {
-   a,
-   b
-  }
+ if!(
+  variant_safeguard.is_vector_stable(
+   {
+    a,
+    b
+   }
+  )
  )then
   return
  end
  local output={}
- for i=
-  1,
+ for i=(
+  1
+ ),(
   #a
- do
+ )do
   table.insert(
    output,
-   a[
-    i
-   ]-b[
-    i
-   ]
+   (
+    a[
+     i
+    ]
+   )-(
+    b[
+     i
+    ]
+   )
   )
  end
  return output
@@ -67,26 +74,33 @@ function vector.multiply(
  a,
  b
 )
- if!variant_safeguard.is_vector_stable(
-  {
-   a,
-   b
-  }
+ if!(
+  variant_safeguard.is_vector_stable(
+   {
+    a,
+    b
+   }
+  )
  )then
   return
  end
  local output={}
- for i=
-  1,
+ for i=(
+  1
+ ),(
   #a
- do
+ )do
   table.insert(
    output,
-   a[
-    i
-   ]*b[
-    i
-   ]
+   (
+    a[
+     i
+    ]
+   )*(
+    b[
+     i
+    ]
+   )
   )
  end
  return output
@@ -96,26 +110,33 @@ function vector.divide(
  a,
  b
 )
- if!variant_safeguard.is_vector_stable(
-  {
-   a,
-   b
-  }
+ if!(
+  variant_safeguard.is_vector_stable(
+   {
+    a,
+    b
+   }
+  )
  )then
   return
  end
  local output={}
- for i=
-  1,
+ for i=(
+  1
+ ),(
   #a
- do
+ )do
   table.insert(
    output,
-   a[
-    i
-   ]/b[
-    i
-   ]
+   (
+    a[
+     i
+    ]
+   )/(
+    b[
+     i
+    ]
+   )
   )
  end
  return output
