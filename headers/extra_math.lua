@@ -2,7 +2,7 @@
 
 required decencies:
 
-https://dujanhung.github.com/extra-lua-preset/blob/safeguards/variant_safeguard.lua
+https://dujanhung.github.com/extra-lua-preset/blob/maths/extra_math.lua
 
 */
 
