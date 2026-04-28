@@ -1,9 +1,9 @@
 module("extra_lua_preset")
-extra_lua_preset.fileroot="addons/extra_lua_preset/presets/"
+extra_lua_preset.file_root="addons/extra_lua_preset/presets/"
 extra_lua_preset.presets={
-"variant_safeguard"
-"extra_math"
-"vector"
+"safeguards/variant_safeguard"
+"maths/extra_math"
+"variants/vector"
 }
 for line in do
  dofile(tostring(line))
