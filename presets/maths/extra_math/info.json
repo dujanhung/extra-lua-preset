@@ -5,7 +5,7 @@
    "index":1,
    "name":"epsilon",
    "type":"number",
-   "default":1e-9
+   "value":1e-9
   }
  ]
 }
