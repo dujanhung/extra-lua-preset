@@ -1,6 +1,6 @@
 {
  "module":"extra_math"
- "variable_bind_txt":[
+ "variable_bind_txt_multiline":[
   {
    "filepath":"",
    "variable_name":"epsilon"
