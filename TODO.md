@@ -1,6 +1,7 @@
 before using this template, you should:
 
 - remove all MD files.
+- remove `.github/*` folder.
 - nest this repo inside your MOD folder.
 
 example:
