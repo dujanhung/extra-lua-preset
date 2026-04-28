@@ -3,6 +3,7 @@
  "variable_bind_txt":[
   {
    "filepath":"",
+   "variable_name":"epsilon"
    "variable_type":"number"
   }
  ]
