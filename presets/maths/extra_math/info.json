@@ -1,9 +1,0 @@
-{
- "module":"extra_math"
- "variables":[
-  {
-   "name":"epsilon",
-   "value":1e-9
-  }
- ]
-}
