@@ -1,3 +1,9 @@
 {
  "module":"extra_math"
+ "variable_bind_txt":[
+  {
+   "filepath":"",
+   "variable_type":"number"
+  }
+ ]
 }
