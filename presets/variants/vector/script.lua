@@ -1,3 +1,5 @@
+required("variant_safeguard")
+module("vector")
 function vector.add(a,b)if!variant_safeguard.is_vector_stable({a,b})then return end local output={};for i=1,#a do table.insert(output,a[i]+b[i])end return output end
 function vector.subtract(a,b)if!variant_safeguard.is_vector_stable({a,b})then return end local output={};for i=1,#a do table.insert(output,a[i]-b[i])end return output end
 function vector.multiply(a,b)if!variant_safeguard.is_vector_stable({a,b})then return end local output={};for i=1,#a do table.insert(output,a[i]*b[i])end return output end
