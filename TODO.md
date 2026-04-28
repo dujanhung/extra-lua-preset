@@ -7,7 +7,7 @@ before using this template, you should:
 example:
 
 ```
-ROOT/addons/extra-lua-preset
+ROOT/addons/extra-lua-preset/*
 ```
 
 make scripts executable via:
