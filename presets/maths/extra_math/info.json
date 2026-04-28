@@ -3,7 +3,6 @@
  "variables":[
   {
    "name":"epsilon",
-   "type":"number",
    "value":1e-9
   }
  ]
