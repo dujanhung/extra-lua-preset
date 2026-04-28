@@ -1,3 +1,0 @@
-extra-lua-preset/headers/variant_safeguard.lua
-extra-lua-preset/headers/extra_math.lua
-extra-lua-preset/headers/vector.lua
