@@ -6,5 +6,5 @@ before using this template, you should:
 example:
 
 ```
-your-evtsbx-mod/addons/extra-lua-preset
+ROOT/addons/extra-lua-preset
 ```
