@@ -1,16 +1,11 @@
 {
  "module":"extra_math"
- "variable_bind_txt_multiline":[
+ "variables":[
   {
-   "filepath":"",
-   "variables":[
-    {
-     "index":1,
-     "name":"epsilon",
-     "type":"number",
-     "default":1e-9
-    }
-   ]
+   "index":1,
+   "name":"epsilon",
+   "type":"number",
+   "default":1e-9
   }
  ]
 }
