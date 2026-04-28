@@ -1,3 +1,4 @@
 {
- "module":"IO_number"
+ "module":"IO_number",
+ "script":"script.lua"
 }
