@@ -1,6 +1,4 @@
-module(
- "extra_math"
-)
+module("extra_math")
 local config_filepath="extra-lua-preset/configs/extra_math.txt"
 local line_count=1
 for line in io.lines(config_filepath)do
