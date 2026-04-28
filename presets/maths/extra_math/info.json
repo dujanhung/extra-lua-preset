@@ -3,9 +3,13 @@
  "variable_bind_txt_multiline":[
   {
    "filepath":"",
-   "index":1,
-   "variable_name":"epsilon",
-   "variable_type":"number"
+   "variables":[
+    {
+     "index":1,
+     "name":"epsilon",
+     "type":"number"
+    }
+   ]
   }
  ]
 }
