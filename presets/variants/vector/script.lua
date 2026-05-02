@@ -1,5 +1,5 @@
 required("variant_safeguard")
-module("vector")
+vector={}
 function vector.add(a,b)if!variant_safeguard.is_vector_stable({a,b})then return end local output={};for i=1,#a do table.insert(output,a[i]+b[i])end return output end
 function vector.subtract(a,b)if!variant_safeguard.is_vector_stable({a,b})then return end local output={};for i=1,#a do table.insert(output,a[i]-b[i])end return output end
 function vector.multiply(a,b)if!variant_safeguard.is_vector_stable({a,b})then return end local output={};for i=1,#a do table.insert(output,a[i]*b[i])end return output end
@@ -14,3 +14,4 @@ function vector.distance(a,b)return math.sqrt(vector.mixdown(vector.exp2(vector.
 function vector.dot(a,b)return vector.mixdown(vector.multiply(a,b))end
 function vector.normalize(o)return vector.divide(o,vector.length(o))end
 function vector.projection(a,b)local o=vector.normalized(b);return vector.scale(o,vector.dot(a,o))end
+return vector
