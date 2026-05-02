@@ -1,4 +1,4 @@
-module("variant_safeguard")
+variant_safeguard={}
 function variant_safeguard.is_boolean(o)if type(o)!="boolean"then return false end return true end
 function variant_safeguard.is_number(o)if type(o)!="number"then return false end return true end
 function variant_safeguard.is_string(o)if type(o)!="string"then return false end return true end
@@ -6,3 +6,4 @@ function variant_safeguard.is_table(o)if type(o)!="table"then return false end r
 function variant_safeguard.is_function(o)if type(o)!="function"then return false end return true end
 function variant_safeguard.is_vector(o)if!variant_safeguard.is_table(o)then return false end if!#o>0 then return false end for i=1,#o do if!variant_safeguard.is_number(a[i])then return false end end return true end
 function variant_safeguard.is_vector_stable(o)if!variant_safeguard.is_table(o)then return false end for i=1,#o do if!variant_safeguard.is_vector(o[i])then return false end if i>1 then if#o[1]!=#o[i]then return false end end end return true end
+return variant_safeguard
