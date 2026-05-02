@@ -10,7 +10,7 @@ example:
 ROOT/addons/extra-lua-preset/*
 ```
 
-make scripts executable via:
+load scripts via:
 
 ```lua
 dofile("addons/extra-lua-preset/orchestrator/ALL.lua")
